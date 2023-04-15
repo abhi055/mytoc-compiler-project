@@ -1,0 +1,21 @@
+extern int printi(int val);
+
+int do_math(int a) {
+  int x = a * 5;
+  return x + 3;
+}
+
+void do_math_again(int a) {
+  printi(a * 10);
+  return;
+}
+
+double do_something(int a) {
+	return 5.1;
+}
+
+extern double func();
+
+printi(do_math(8)-1);
+do_math_again(5);
+do_something(2);
